@@ -4,13 +4,21 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Class="PancakeViewExemplo.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="PancakeView"
+               HorizontalTextAlignment="Center"/>
+
+        <pancake:PancakeView BackgroundGradientEndColor="Blue"
+                             BackgroundGradientStartColor="DarkSlateBlue"
+                             CornerRadius="10"
+                             Margin="15">
+            <Label Text="Background Gradiente com os cantos arredondados"
+                   TextColor="#FFF"/>
+        </pancake:PancakeView>
+
     </StackLayout>
 
 </ContentPage>
